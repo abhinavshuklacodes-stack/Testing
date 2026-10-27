@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — Orcible</title><link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">o</span><span>orcible<span class="brand-dot">.</span></span></a><a class="back-link" href="index.html">← Back to home</a></header>
+  <main class="auth-wrap register-wrap">
+    <section class="auth-aside"><div class="eyebrow"><span class="status-dot"></span> START SOMETHING GOOD</div><h1>Your ideas.<br>Your tools.<br><span>One flow.</span></h1><p>Create an Orcible account and give your ideas a place to take shape.</p><div class="decor-orbit"><span>o.</span><i></i><b></b></div></section>
+    <section class="auth-card panel">
+      <span class="section-kicker">GET STARTED</span><h2>Create your account</h2><p class="muted">Use Google for your name and email, then set your Orcible password.</p>
+      <button class="google-btn" id="google-register" type="button"><span class="google-g">G</span> Continue with Google</button>
+      <div class="divider"><span>THEN SET YOUR PASSWORD</span></div>
+      <form id="register-form">
+        <label class="field-label" for="full-name">Full name</label><input id="full-name" name="name" autocomplete="name" placeholder="Your name" required>
+        <label class="field-label" for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <label class="field-label" for="new-password">Create new password 🔑</label><div class="password-wrap"><input id="new-password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="At least 8 characters" required><button type="button" class="toggle-password" aria-label="Show password">◉</button></div>
+        <label class="field-label" for="confirm-password">Confirm new password 🔑</label><div class="password-wrap"><input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" placeholder="Enter password again" required><button type="button" class="toggle-password" aria-label="Show password">◉</button></div>
+        <p class="password-note">This password is for Orcible only — it is not your Google password.</p>
+        <button class="primary-btn full-btn" type="submit"><span>Register</span><span class="button-arrow">↗</span></button>
+        <p class="form-message" id="register-message" role="status"></p>
+      </form>
+      <div class="auth-switch">Already have an account? <a href="login.html">Log in</a></div>
+    </section>
+  </main>
+  <script src="auth.js"></script>
+</body>
+</html>

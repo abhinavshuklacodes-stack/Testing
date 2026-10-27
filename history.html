@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workflow history — Orcible</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">o</span><span>orcible<span class="brand-dot">.</span></span></a><nav class="topnav"><a href="login.html">Login</a><a class="nav-register" href="register.html">Register <span>↗</span></a><a class="active-nav" href="history.html">History</a></nav></header>
+  <main class="history-main">
+    <div class="history-heading"><div><div class="eyebrow"><span class="status-dot"></span> YOUR WORKSPACE</div><h1>Workflow <span>history.</span></h1><p class="muted">Your past plans, all in one place.</p></div><a class="secondary-btn" href="index.html">← Back to home</a></div>
+    <section class="panel history-panel">
+      <div class="history-toolbar"><div><h2>Saved workflows</h2><p class="muted">History is loaded from your account.</p></div><button class="refresh-btn" id="refresh-history" type="button">↻ Refresh</button></div>
+      <div id="history-list" class="history-list" aria-live="polite"><div class="loading-state"><span class="loader"></span><p>Loading workflow history…</p></div></div>
+    </section>
+    <p class="history-footnote">History is tied to your account. Log in to view your saved workflows.</p>
+  </main>
+  <script src="history.js"></script>
+</body>
+</html>

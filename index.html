@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b7ff4a">
+  <title>Orcible — AI workflow builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Orcible home"><span class="brand-mark">o</span><span>orcible<span class="brand-dot">.</span></span></a>
+    <nav class="topnav" aria-label="Main navigation">
+      <a href="login.html">Login</a>
+      <a class="nav-register" href="register.html">Register <span aria-hidden="true">↗</span></a>
+      <a href="history.html">History</a>
+    </nav>
+  </header>
+
+  <main class="home-layout">
+    <section class="hero">
+      <div class="eyebrow"><span class="status-dot"></span> YOUR AI WORKFLOW, SIMPLIFIED</div>
+      <h1>Turn a good idea<br>into a <span>great workflow.</span></h1>
+      <p class="hero-copy">Tell Orcible what you want to accomplish. Build a clear path from your idea to the right AI tools.</p>
+    </section>
+
+    <div class="workspace-grid">
+      <section class="workflow-card panel">
+        <div class="card-heading">
+          <div>
+            <span class="section-kicker">01 / START HERE</span>
+            <h2>Build a workflow</h2>
+          </div>
+          <span class="heading-icon" aria-hidden="true">✳</span>
+        </div>
+        <label class="field-label" for="workflow-prompt">What do you want to do?</label>
+        <textarea id="workflow-prompt" rows="7" placeholder="e.g. Research a topic, compare sources, and turn the findings into a presentation…"></textarea>
+        <div class="prompt-hint"><span>Be specific for better results.</span><span id="char-count">0 / 1200</span></div>
+        <div class="prompt-examples">
+          <span class="examples-label">TRY AN IDEA</span>
+          <button class="suggestion" type="button" data-prompt="Research a topic and summarize the most reliable sources.">Research & summarize</button>
+          <button class="suggestion" type="button" data-prompt="Create a content plan for a new product launch.">Create a content plan</button>
+        </div>
+        <button id="generate-btn" class="primary-btn" type="button"><span>Generate workflow</span><span class="button-arrow">↗</span></button>
+        <p class="small-note">You can review your workflow before using any tools.</p>
+        <div id="workflow-result" class="workflow-result" hidden aria-live="polite"></div>
+      </section>
+
+      <aside class="tools-card panel">
+        <div class="card-heading">
+          <div>
+            <span class="section-kicker">02 / YOUR TOOLKIT</span>
+            <h2>Popular AI tools</h2>
+          </div>
+          <span class="tool-count">06 TOOLS</span>
+        </div>
+        <p class="muted">A few powerful minds for your next big idea.</p>
+        <div class="tools-grid">
+          <button class="tool-tile" type="button" data-tool="Claude"><span class="tool-logo claude">✳</span><span>Claude</span><span class="tool-open">↗</span></button>
+          <button class="tool-tile" type="button" data-tool="ChatGPT"><span class="tool-logo chatgpt">◉</span><span>ChatGPT</span><span class="tool-open">↗</span></button>
+          <button class="tool-tile" type="button" data-tool="Gemini"><span class="tool-logo gemini">✦</span><span>Gemini</span><span class="tool-open">↗</span></button>
+          <button class="tool-tile" type="button" data-tool="DeepSeek"><span class="tool-logo deepseek">◈</span><span>DeepSeek</span><span class="tool-open">↗</span></button>
+          <button class="tool-tile" type="button" data-tool="Kimi"><span class="tool-logo kimi">☾</span><span>Kimi</span><span class="tool-open">↗</span></button>
+          <button class="tool-tile" type="button" data-tool="Meta AI"><span class="tool-logo meta">∞</span><span>Meta AI</span><span class="tool-open">↗</span></button>
+        </div>
+        <div class="tool-tip"><span class="tip-spark">✦</span><p><strong>One goal. The right tools.</strong><br>Orcible helps you plan the steps before you jump between apps.</p></div>
+      </aside>
+    </div>
+    <section class="bottom-strip"><span class="bottom-mark">o.</span><span>Make your AI work feel like one connected process.</span><a href="history.html">View your workflow history <span>→</span></a></section>
+  </main>
+  <footer><span>© 2026 Orcible</span><span>Built for better ways of working.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
